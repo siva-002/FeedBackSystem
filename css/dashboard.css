@@ -1,0 +1,181 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+*{
+  font-family: 'poppins';
+  
+}
+#indexdetail tr th{
+  text-align: center;
+
+}
+#indexdetail tr td{
+
+
+}
+
+/*
+ * Global add-ons
+ */
+.nav-sidebar li a{
+  font-size:18px;
+  color:rgb(0, 0, 0);
+  letter-spacing: px;
+
+}
+.nav-sidebar li {
+  padding-top:5px;
+}
+li a img{
+  
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.nav-sidebar li a:hover{
+  background: linear-gradient(292deg, rgb(39, 43, 44) 0.00%, rgb(241, 60, 43) 100.00%);
+}
+.nav-sidebar li span{
+  color:rgb(238, 255, 0);
+}
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background: linear-gradient(132deg, rgb(0, 255, 157) 0.00%, rgb(227, 43, 175) 100.00%);
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /*20px padding + 1px border*/
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #eef3f7;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+  
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+table{
+  font-size:18px;
+}
+
+
+@media(max-width:768px){
+  .sidebar ul{
+
+    margin: auto;
+  }
+  .sidebar ul #mob-img{
+    
+  }
+  #mob-menu{
+   color:black;
+   font-size: 20px;
+   font-weight: bold;
+   background-color: #fafafa;
+   width: 100vw;
+   text-align: right;
+   margin-top: -10px;
+   margin-right: -10px;
+   padding-top: 30px;
+   padding-right: 30px;
+  }
+  #indexdetail{
+    margin: 20px 0px 0px 0px;
+    text-align: left;
+    font-size:15px;
+
+  }
+  .mobile-image{
+    display: none;;
+  }
+  .nav-sidebar li {
+    padding-top:0px;
+  }
+  .navbar-header{
+    height:60px;
+  }
+  .navbar-brand{
+    width:80%;
+  }
+  .page-header{
+    font-size: 20px;
+  }
+}
